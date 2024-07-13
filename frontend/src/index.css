@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:rgb(40,40,40);
+}
+
+.cursive{
+    font-style: italic;
+}
+
+#frame {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.shrink {
+    position: absolute;
+    /*top: -100px;
+    /* Adjust the negative top value to shrink from the top */
+    /*width: 80%;
+    height: calc(100% + 80px);
+    /* Adjust height to compensate for negative top value */
+    /*border: none;*/
+    top: -150px; /* Adjust the negative top value to shrink from the top */
+    left: -20px; /* Adjust the negative left value to shrink from the left */
+    width: 100%; /* Adjust width to compensate for the left value */
+    height: calc(100% + 250px); /* Adjust height to compensate for negative top value */
+    border: none;
+}
