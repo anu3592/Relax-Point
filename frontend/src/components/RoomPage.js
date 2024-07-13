@@ -180,12 +180,12 @@ const RoomPage = ()=>{
         
             <h1 className="text-2xl text-white font-bold m-2">Now you are streaming</h1>
             
-            <ReactPlayer playing muted controls height="300px" width="300px" url={remoteStream} className="ml-[35%] mt-4 mb-4 mr-4"/>
+            <ReactPlayer playing controls height="300px" width="300px" url={remoteStream} className="ml-[35%] mt-4 mb-4 mr-4"/>
             <h4 className="text-xl text-white font-bold m-2">{remoteSocketId ? "Connected" : "No one in room"}</h4>
             {myStream? <button className="text-lg text-white bg-orange-400 rounded-md border-none p-1 w-[200px] m-2" onClick={sendStream}>Send Stream</button>:<></>}
             {remoteSocketId? <button className="text-lg text-white bg-orange-400 rounded-md border-none p-1 w-[100px] m-2" onClick={handleCallUser}>Call</button>:<></>}
             {myStream? <button className="text-lg text-white bg-orange-400 rounded-md border-none p-1 w-[200px] m-2" onClick={handleScreenShare}>Share Screen</button>:<></>}
-            <ReactPlayer playing muted controls height="300px" width="300px" url={myStream} className="ml-[35%] mt-4 mb-4 mr-4"/>
+            <ReactPlayer playing controls height="300px" width="300px" url={myStream} className="ml-[35%] mt-4 mb-4 mr-4"/>
             
             
         
