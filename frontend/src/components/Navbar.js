@@ -67,6 +67,7 @@ const Navbar = () => {
                                 <Link to='/'><li className="font-bold m-3 p-2 text-white cursor-pointer ">Home</li></Link>
                                 <li className="font-bold m-3 p-2 text-white cursor-pointer">About Us</li>
                                 <Link to='/room'><li className="font-bold m-3 p-2 text-white cursor-pointer">Streaming</li></Link>
+                                <li className="flex font-bold m-3 p-2 text-white cursor-pointer" onClick={LogOut}> Logout</li>
                                 <li className="flex font-bold m-3 p-2 text-white cursor-pointer"><CgProfile size={25} /> Profile</li>
                             </>
                             :
